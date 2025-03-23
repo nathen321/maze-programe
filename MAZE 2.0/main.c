@@ -1,5 +1,3 @@
-
-
 //Using SDL and standard IO
 #include "demo.h"
 
@@ -15,7 +13,7 @@ int main(int argc, char* argv[])
     }
  
     // Initialize the player
-    Player player = { 22.0f, 12.0f, 90.0f, 5.0f, 20.0f }; // Start at the center, facing right
+    Player player = { 22.0f, 12.0f, 90.0f, 5.0f, 40.0f }; // Start at the center, facing right
 
     // Main loop flag
     int quit = 0;
