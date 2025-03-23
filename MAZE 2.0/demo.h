@@ -17,10 +17,10 @@
 
 
 typedef struct SDL_Instance {
-    SDL_Window* window = NULL;
-    SDL_Surface* gScreenSurface = NULL;
-    SDL_Surface* gXOut = NULL;
-    SDL_Renderer* renderer = NULL;
+    SDL_Window* window;
+    SDL_Surface* gScreenSurface;
+    SDL_Surface* gXOut;
+    SDL_Renderer* renderer;
 
 } SDL_Instance;
 
