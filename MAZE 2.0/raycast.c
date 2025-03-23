@@ -112,11 +112,11 @@ void raycast(SDL_Renderer* renderer, Player* player) {
         // Choose wall color
         SDL_Color color;
         switch (worldMap1[mapX][mapY]) {
-        case 1:  color = SDL_Color{ 255, 0, 0, 255 }; break; // Red
-        case 2:  color = SDL_Color{ 0, 255, 0, 255 }; break; // Green
-        case 3:  color = SDL_Color{ 0, 0, 255, 255 }; break; // Blue
-        case 4:  color = SDL_Color{ 255, 255, 0, 255 }; break; // Yellow
-        default: color = SDL_Color{ 255, 255, 255, 255 }; break; // White
+        case 1:  color = (SDL_Color){ 255, 0, 0, 255 }; break; // Red
+        case 2:  color = (SDL_Color){ 0, 255, 0, 255 }; break; // Green
+        case 3:  color = (SDL_Color){ 0, 0, 255, 255 }; break; // Blue
+        case 4:  color = (SDL_Color){ 255, 255, 0, 255 }; break; // Yellow
+        default: color = (SDL_Color){ 255, 255, 255, 255 }; break; // White
         }
 
         // Dim the color for horizontal walls
