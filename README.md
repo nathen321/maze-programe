@@ -1,10 +1,10 @@
-#Raycasting-Based Game
+# Raycasting-Based Game
 This project is a simple raycasting-based game inspired by classic first-person shooters like Wolfenstein 3D. It uses SDL2 for rendering and input handling, and it implements a basic raycasting algorithm to create a pseudo-3D environment.
 
-#Overview
+# Overview
 The game simulates a 3D environment using a 2D grid (worldMap) and raycasting. The player can move around the map, and the walls are rendered in pseudo-3D based on the player's position and orientation.
 
-#Features
+# Features
 Raycasting Algorithm: Renders walls in pseudo-3D using raycasting.
 
 Collision Detection: Prevents the player from walking through walls.
@@ -15,7 +15,7 @@ Player Movement: The player can move forward, backward, and rotate left/right.
 
 Dynamic Rendering: The game updates in real-time based on player input.
 
-#Requirements
+# Requirements
 To build and run this project, you need:
 
 SDL2: The Simple DirectMedia Layer library for rendering and input handling.
@@ -24,7 +24,7 @@ C Compiler: A C compiler like GCC or Clang.
 
 Make: For building the project (optional).
 
-#Setup
+# Setup
 1. Install SDL2
 On Linux:
 sudo apt-get install libsdl2-dev
@@ -44,7 +44,7 @@ gcc -o raycasting_game main.c -lSDL2 -lm
 4. Run the Game
 ./raycasting_game
 
-#Code Structure
+# Code Structure
 main.c: The main file containing the game loop, raycasting logic, and rendering code.
 
 worldMap: A 2D array representing the game map. Walls are represented by numbers (1, 2, 3, etc.), and empty spaces are represented by 0.
@@ -55,7 +55,7 @@ Raycasting Function: Casts rays from the player's position to determine wall dis
 
 Collision Detection: Ensures the player cannot move through walls.
 
-#How It Works
+# How It Works
 Raycasting Algorithm
 For each vertical strip of the screen, a ray is cast from the player's position in the direction of the camera plane.
 
@@ -77,7 +77,7 @@ Walls are rendered as vertical slices based on the raycasting results.
 
 Horizontal walls are rendered with dimmed colors to differentiate them from vertical walls.
 
-#Controls
+# Controls
 W: Move forward.
 
 S: Move backward.
@@ -88,7 +88,7 @@ D: Rotate right.
 
 ESC: Quit the game.
 
-#Future Improvements
+# Future Improvements
 Textures: Add texture mapping for walls to make the environment more realistic.
 
 Sprites: Add sprites for enemies, objects, and decorations.
@@ -99,7 +99,7 @@ Sound: Add background music and sound effects.
 
 Optimization: Improve performance for larger maps and higher resolutions.
 
-#Acknowledgments
+# Acknowledgments
 Inspired by the raycasting algorithm used in Wolfenstein 3D.
 
 Thanks to the SDL2 community for providing excellent documentation and resources.
