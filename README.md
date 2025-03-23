@@ -37,7 +37,7 @@ Download the SDL2 development libraries from the official website.
 Set up the include and library paths in your development environment.
 
 2. Clone the Repository
-git clone [https://github.com/your-username/raycasting-game.git](https://github.com/nathen321/maze-programe.git)
+git clone [https://github.com/nathen321/maze-programe.git](https://github.com/nathen321/maze-programe.git)
 cd raycasting-game
 3. Build the Project
 gcc -o raycasting_game main.c -lSDL2 -lm
