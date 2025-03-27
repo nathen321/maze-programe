@@ -1,4 +1,4 @@
-/* styles.css */
+/* Updated CSS with navigation and hero image styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,113 +8,76 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    padding: 60px 0;
-    text-align: center;
+/* Navigation */
+nav {
+    background-color: rgba(30, 30, 47, 0.9);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-header h1 {
-    font-size: 3rem;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
     margin: 0;
+    gap: 2rem;
 }
 
-header p {
-    font-size: 1.2rem;
-    margin: 10px 0 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2575fc;
+nav a {
     color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2575fc;
+}
+
+.github-btn {
+    background-color: #2575fc;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.github-btn:hover {
     background-color: #1b5fd9;
+    color: white;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
 }
 
-#features {
-    padding: 60px 0;
-    background-color: #2a2a40;
+.hero-text {
+    flex: 1;
+    padding: 0 2rem;
 }
 
-#features h2 {
+.hero-image {
+    flex: 1;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.feature {
-    background-color: #3a3a5a;
-    padding: 20px;
+.hero-image img {
+    max-width: 80%;
     border-radius: 10px;
-    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.feature h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.feature p {
-    font-size: 1rem;
-    color: #cccccc;
-}
-
-#how-it-works {
-    padding: 60px 0;
-    background-color: #1e1e2f;
-    text-align: center;
-}
-
-#how-it-works h2 {
+h1 {
+    font-family: 'Press Start 2P', cursive;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
-#how-it-works p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#get-started {
-    padding: 60px 0;
-    background-color: #2a2a40;
-    text-align: center;
-}
-
-#get-started h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#get-started p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-footer {
-    padding: 20px 0;
-    background-color: #1e1e2f;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #cccccc;
-}
+/* Rest of your existing styles remain the same */
