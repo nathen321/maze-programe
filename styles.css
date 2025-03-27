@@ -118,3 +118,73 @@ footer {
     font-size: 0.9rem;
     color: #cccccc;
 }
+nav {
+    background-color: rgba(30, 30, 47, 0.9);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2575fc;
+}
+
+.github-btn {
+    background-color: #2575fc;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.github-btn:hover {
+    background-color: #1b5fd9;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.hero-text {
+    flex: 1;
+    padding: 0 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
