@@ -1,4 +1,18 @@
 /* styles.css */
+body, nav, header {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: rgba(30, 30, 47, 0.9);
+    padding: 1rem 0; /* Keep your desired padding */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
