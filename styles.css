@@ -188,3 +188,19 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+#how-it-works {
+    padding: 60px 0;
+    background-color: #1e1e2f;
+    text-align: right;
+}
+
+#how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#how-it-works p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
