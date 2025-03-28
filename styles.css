@@ -195,7 +195,6 @@ h1 {
 #about {
     padding: 60px 0;
     background-color: #1e1e2f;
-    text-align: right;
 }
 
 #about h2 {
@@ -208,4 +207,5 @@ h1 {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
+    text-align: right;
 }
