@@ -17,10 +17,10 @@
 
 
 typedef struct SDL_Instance {
-    SDL_Window* window;
-    SDL_Surface* gScreenSurface;
-    SDL_Surface* gXOut;
-    SDL_Renderer* renderer;
+    SDL_Window *window;
+    SDL_Surface *gScreenSurface;
+    SDL_Surface *gXOut;
+    SDL_Renderer *renderer;
 
 } SDL_Instance;
 
@@ -32,19 +32,19 @@ typedef struct {
 } Player;
 
 // Function to normalize the orientation to the range [0, 360]
-int checkCollision(Player* player, float newX, float newY);
-void movePlayer(Player* player, float deltaTime);
+int checkCollision(Player *player, float newX, float newY);
+void movePlayer(Player *player, float deltaTime);
 
 
 //Starts up SDL and creates window
-SDL_Instance* init();
+SDL_Instance *init();
 
 //Loads media
-int loadMedia(SDL_Instance* instance);
+int loadMedia(SDL_Instance *instance);
 
 //Frees media and shuts down SDL
-void close(SDL_Instance* instance);
+void close(SDL_Instance *instance);
 
-void raycast(SDL_Renderer* renderer, Player* player);
+void raycast(SDL_Renderer *renderer, Player *player);
 
 #endif
