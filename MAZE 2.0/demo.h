@@ -22,7 +22,6 @@ typedef struct SDL_Instance
     SDL_Surface *gScreenSurface;
     SDL_Surface *gXOut;
     SDL_Renderer *renderer;
-
 } SDL_Instance;
 
 typedef struct
