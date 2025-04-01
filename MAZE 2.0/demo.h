@@ -26,24 +26,23 @@ SDL_Renderer *renderer;
 
 typedef struct
 {
-    float x, y;       // Player position
-    float angle;       // Player orientation in degrees
-    float moveSpeed;   // Player movement speed
-    float turnSpeed;   // Player turning speed
+float x, y;
+float angle;
+float moveSpeed;
+float turnSpeed;
 } Player;
 
-// Function to normalize the orientation to the range [0, 360]
 int checkCollision(Player *player, float newX, float newY);
 void movePlayer(Player *player, float deltaTime);
 
 
-//Starts up SDL and creates window
+
 SDL_Instance *init();
 
-//Loads media
+
 int loadMedia(SDL_Instance *instance);
 
-//Frees media and shuts down SDL
+
 void close(SDL_Instance *instance);
 
 void raycast(SDL_Renderer *renderer, Player *player);
