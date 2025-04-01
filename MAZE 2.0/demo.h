@@ -16,7 +16,8 @@
 
 
 
-typedef struct SDL_Instance {
+typedef struct SDL_Instance 
+{
     SDL_Window *window;
     SDL_Surface *gScreenSurface;
     SDL_Surface *gXOut;
@@ -24,7 +25,8 @@ typedef struct SDL_Instance {
 
 } SDL_Instance;
 
-typedef struct {
+typedef struct 
+{
     float x, y;       // Player position
     float angle;       // Player orientation in degrees
     float moveSpeed;   // Player movement speed
